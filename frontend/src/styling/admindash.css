@@ -1,0 +1,77 @@
+.admindash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: rgb(203, 222, 255);
+}
+
+.admindash-content {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.admindash-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.admindash-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.admindash-button {
+  padding: 10px 20px;
+  margin-bottom: 10px; 
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.admindash-button:hover {
+  background-color: #0056b3;
+}
+
+.admindash-signout {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admindash-signout:hover {
+  background-color: #cc0000;
+}
+
+@media (max-width: 600px) {
+  .admindash-container {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .admindash-content {
+    padding: 15px;
+  }
+
+  .admindash-title {
+    font-size: 24px;
+    padding-top: 10px;
+  }
+}

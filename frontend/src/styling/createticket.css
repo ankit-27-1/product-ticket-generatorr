@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.create-ticket-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(203, 222, 255);
+  height: 100vh;
+  width: 100vw;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.create-ticket-title {
+  font-size: 28px;
+  padding: 20px;
+  margin: 0;
+}
+
+.create-ticket-form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-ticket-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.create-ticket-formGroup {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.create-ticket-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.create-ticket-input,
+.create-ticket-select,
+.create-ticket-textarea {
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.create-ticket-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.create-ticket-button:hover {
+  background-color: #0056b3;
+}
+
+.create-ticket-goBackButton {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.create-ticket-goBackButton:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 600px) {
+  .create-ticket-container {
+    padding: 0 20px;
+  }
+
+  .create-ticket-form-container {
+    padding: 15px;
+  }
+
+  .create-ticket-title {
+    font-size: 24px;
+    padding: 15px;
+  }
+}

@@ -1,0 +1,187 @@
+.signin-page {
+  display: flex;
+  height: 100vh;
+  background-color: rgb(203, 222, 255);
+  font-family: "IBM Plex Sans Condensed", serif;
+  overflow: hidden;
+}
+
+.signin-image-container {
+  flex: 1;
+  max-width: 25%;
+}
+
+.signin-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.signin-content {
+  flex: 3;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+.signup-prompt {
+  font-size: 1rem;
+  margin-top: 10px; 
+  text-align: center; 
+}
+
+.signup-link {
+  color: #0073e6; 
+  cursor: pointer; 
+  text-decoration: underline; 
+}
+
+.platform-title {
+  font-family: "DM Serif Text", serif;
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.signin-title {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.signin-form {
+  width: 100%;
+  max-width: 450px;
+  margin-top: 10px;
+}
+
+.signin-formGroup {
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.signin-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.signin-input,
+.signin-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans Condensed", serif;
+}
+
+.signin-input:focus,
+.signin-select:focus {
+  outline: none;
+  border-color: #0073e6;
+  box-shadow: 0 0 5px rgba(0, 115, 230, 0.5);
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "IBM Plex Sans Condensed", serif;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close-button {
+  margin-top: 20px;
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "IBM Plex Sans Condensed", serif;
+  transition: background-color 0.3s ease;
+}
+
+.modal-close-button:hover {
+  background-color: #005bb5;
+}
+
+.signin-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.signin-content::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .signin-image-container {
+    display: none;
+  }
+
+  .signin-page {
+    flex-direction: column;
+  }
+
+  .signin-content {
+    flex: none;
+    padding: 20px;
+    height: 100vh; 
+    overflow-y: auto; 
+    box-sizing: border-box;
+  }
+}
